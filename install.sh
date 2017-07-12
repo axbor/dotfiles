@@ -4,10 +4,7 @@ DOTFILES=`pwd`
 
 link() {
     FILE="$1"
-    echo "$FILE"
-    echo "${2:-$FILE}"
     SOURCE="${2:-$FILE}"
-    echo /**
     if [[ ! $SOURCE == /** ]]; then
         SOURCE="$HOME/$FILE"
     fi
@@ -23,8 +20,19 @@ link() {
         echo "linking $TARGET"
         ln -s "$TARGET" "$SOURCE"
     fi
-    echo "$SOURCE"
-    echo "$TARGET"
 }
 
 link .vimrc
+
+
+# Adding Vundle for vim
+if [[ "$*" == *"--vundle"* ]]; then
+    echo "Installing vim vundle plugins"
+    if ! [ -d ~/.vim/bundle/vundle ]; then
+        git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+    fi
+    vim +PluginInstall +qall
+    echo "Plugins installed!"
+else
+    echo "Not installing vim vundle plugins, run with --vundle to enable"
+fi
