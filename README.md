@@ -1,4 +1,4 @@
-# dotfiles
+# Dotfiles
 
 
-# Based on dotfiles created by dschlyter (https://github.com/dschlyter)
+Based on dotfiles created by dschlyter (https://github.com/dschlyter)
