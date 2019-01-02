@@ -23,6 +23,9 @@ link() {
 }
 
 link .vimrc
+link .bashrc
+link .bash_profile
+link .bash_aliases
 
 
 # Adding Vundle for vim
