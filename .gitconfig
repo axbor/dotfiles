@@ -1,0 +1,27 @@
+[user]
+	name = Axel Borgdén
+	email = axel.borgden@cygni.se
+[diff]
+	tool = meld
+	guitool = meld
+[difftool "diffmerge"]
+	cmd = diffmerge \"$LOCAL\" \"$REMOTE\"
+[merge]
+	tool = meld
+[mergetool "diffmerge"]
+	cmd = "diffmerge --merge --result=\"$MERGED\" \"$LOCAL\" \"$(if test -f \"$BASE\"; then echo \"$BASE\"; else echo \"$LOCAL\"; fi)\" \"$REMOTE\""
+	trustExitCode = true
+[core]
+	autocrlf = input
+	excludesfile = ~/.gitignore
+[mergetool "meld"]
+	path = /usr/local/Cellar/meld/3.14.2/bin/meld
+[push]
+	default = simple
+[alias]
+	st = status
+	co = checkout
+	br = branch
+	ci = commit
+[rerere]
+	enabled = true

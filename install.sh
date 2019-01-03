@@ -27,6 +27,7 @@ link .bashrc
 link .bash_profile
 link .bash_aliases
 link .byobu
+link .gitconfig
 
 
 # Adding Vundle for vim
