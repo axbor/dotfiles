@@ -2,7 +2,6 @@ export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 export PATH=$PATH:~/Documents/own_scripts
 export JAVA_HOME=$(/usr/libexec/java_home)
-export PATH="$PATH:/Users/Axel/tingcore/development/dev/dev-utils/bin"
 export VISUAL=vim
 export EDITOR="$VISUAL"
 export GPG_TTY=$(tty)
@@ -18,7 +17,7 @@ alias java11='export JAVA_HOME=$JAVA_11_HOME'
 java8
 
 
-. /Users/Axel/dev/utils/z/z.sh
+. ~/dev/utils/z/z.sh
 
 #case $(id -u) in
 #    0)
