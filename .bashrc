@@ -6,6 +6,7 @@ export VISUAL=vim
 export EDITOR="$VISUAL"
 export GPG_TTY=$(tty)
 export PATH="$HOME/Library/Python/2.7/bin:$PATH"
+export BYOBU_PREFIX=/usr/local
 
 export JAVA_8_HOME=$(/usr/libexec/java_home -v1.8)
 export JAVA_11_HOME=$(/usr/libexec/java_home -v11)
