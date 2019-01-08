@@ -15,7 +15,7 @@ alias java8='export JAVA_HOME=$JAVA_8_HOME'
 alias java11='export JAVA_HOME=$JAVA_11_HOME'
 
 # default to Java 11
-java8
+java11
 
 
 . ~/dev/utils/z/z.sh
