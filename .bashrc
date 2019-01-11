@@ -18,7 +18,7 @@ alias java11='export JAVA_HOME=$JAVA_11_HOME'
 java11
 
 
-. ~/dev/utils/z/z.sh
+. ~/dev/private/utils/z/z.sh
 
 #case $(id -u) in
 #    0)
